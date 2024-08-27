@@ -13,7 +13,9 @@ The subsection that contains the last initial of the author is where the book go
 The format of the labels are {Genre} {Subsection}
 For example: "To Kill a Mockingbird" by Harper Lee goes in Fiction K-O.
 
-Pricing
+
+Pricing:
+
 The price calculator uses the following pricing:
 0-10 books, no discount.
 11-25 books get a 10% discount
@@ -58,10 +60,9 @@ Pass in the genre and initial and use the return value to write the message "The
 ## Code
 
 protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    => optionsBuilder.UseSqlite(@"Data Source=bigbookstore.sqlite");
+    => optionsBuilder.UseSqlite(@"Data Source=AcmeBooks.sqlite");
+
 ----
-
-
 
 var book = await _context.Books
 .Include(b => b.Author)

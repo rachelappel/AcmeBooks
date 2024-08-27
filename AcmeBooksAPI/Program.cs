@@ -1,3 +1,6 @@
+using AcmeBooks.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace AcmeBooksAPI;
 
 public class Program
@@ -7,7 +10,14 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
 
         // Add services to the container.
+        
 
+
+
+
+
+builder.Services.AddDbContext<AcmeBooksAPIDbContext>(options =>
+    options.UseSqlite(@"Data Source=AcmeBooks.sqlite"));
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
