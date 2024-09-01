@@ -31,5 +31,6 @@ namespace AcmeBooks.Models
         public Language Language { get; set; }
 
         [MaxLength(200)] public string Publisher { get; set; }
+        
     }
 }

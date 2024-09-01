@@ -10,11 +10,6 @@ namespace AcmeBooksAPI
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-        
-
-
-
-
 
             builder.Services.AddDbContext<AcmeBooksAPIDbContext>(options =>
                 options.UseSqlite(@"Data Source=AcmeBooks.sqlite"));

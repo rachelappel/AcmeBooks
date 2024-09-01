@@ -1,4 +1,4 @@
-## Params collection | C# 13
+﻿## Partial properties 
 
 
 

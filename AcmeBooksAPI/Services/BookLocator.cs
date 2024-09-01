@@ -35,7 +35,7 @@
                     throw new ArgumentOutOfRangeException(nameof(authorLastName), "Author's last name must start with a letter");
             }
 
-            return $"{genre} {subsection}";
+            return genre + " " + subsection;
         }
     }
 }

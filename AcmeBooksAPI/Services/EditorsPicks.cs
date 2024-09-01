@@ -2,9 +2,8 @@
 {
     public class EditorsPicks
     {
-        // params collection
-        // also, possibly:
         // init only setters (editor's picks)
+        // params collection
         // pattern matching (match by genre)
     }
 }

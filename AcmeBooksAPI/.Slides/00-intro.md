@@ -1,3 +1,3 @@
-![refactor.png](refactor.png)
+![jb.png](jb.png)
 ---
 [Next](01-intro.md)

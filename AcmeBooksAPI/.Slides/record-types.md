@@ -1,5 +1,16 @@
 ## Record types
 
+**Records are a way to make an entire object immutable as opposed to individual properties that are found in init-only properties.**
 
-[Code](link.cs)---
+* Enhanced readability with nominal or positional syntax
+* Value type semantics in a reference type (e.g, comparisons)
+* Built-in capability to encapsulate data
+* Immutability
+* More flexibility
+
+***
+[Code](../Models)
+<br>
 [Main](main.md)
+***
+Resources:

@@ -1,6 +1,6 @@
 ## Top-level statements
 
-Enables programs without `Main` functions.
+**Enables programs without `Main` functions.**
 
 * Remove unnecessary code
 * Improve readability

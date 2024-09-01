@@ -13,3 +13,13 @@
 * Improve readability
 * Another option for managing types
 * Can reuse the same type names in other files
+
+***
+[Code]()
+<br>
+[Main](main.md)
+***
+Resources:
+
+* [File-scoped types at JetBrains Guide](https://www.jetbrains.com/guide/dotnet/tips/file-scoped-namespaces/)
+* [File-scoped namespaces](https://learn.microsoft.com/dotnet/csharp/whats-new/csharp-10#file-scoped-namespace-declaration)
