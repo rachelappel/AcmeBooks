@@ -1,4 +1,4 @@
-namespace AcmeBooks.Models
+namespace AcmeBooksAPI.Models
 {
     public enum Language
     {
@@ -11,6 +11,9 @@ namespace AcmeBooks.Models
         Vietnamese,
         Swahili,
         Polish,
-        Russian
+        Russian,
+        Greek,
+        Italian,
+        French
     }
 }

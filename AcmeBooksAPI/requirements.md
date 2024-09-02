@@ -13,6 +13,13 @@ The subsection that contains the last initial of the author is where the book go
 The format of the labels are {Genre} {Subsection}
 For example: "To Kill a Mockingbird" by Harper Lee goes in Fiction K-O.
 
+Customer behaviors:
+
+In-store customers may buy multiple books, but they are generally several different single titles.
+In-store customers are about 75% of our sales.
+Sometimes, we run sales on individual books.
+Schools, universities, businesses, and book clubs also purchase books and make the other 25%.
+We offer bulk pricing. Tax applies to these customers: individuals, businesses, and book clubs. Schools are tax-exempt.
 
 Pricing:
 

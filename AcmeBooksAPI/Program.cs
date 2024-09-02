@@ -11,7 +11,7 @@ namespace AcmeBooksAPI
 
             // Add services to the container.
 
-            builder.Services.AddDbContext<AcmeBooksAPIDbContext>(options =>
+            builder.Services.AddDbContext<AcmeBooksDbContext>(options =>
                 options.UseSqlite(@"Data Source=AcmeBooks.sqlite"));
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

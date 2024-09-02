@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace AcmeBooks.Models
+namespace AcmeBooksAPI.Models
 {
     public class Genre
     {

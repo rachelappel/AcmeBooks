@@ -1,0 +1,90 @@
+﻿using Microsoft.EntityFrameworkCore;
+using AcmeBooksAPI.Models;
+
+namespace AcmeBooks.Models
+{
+    public class AcmeBooksDbContext : DbContext
+    {
+        public AcmeBooksDbContext(DbContextOptions<AcmeBooksDbContext> options) : base(options)
+        {
+        }
+
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Genre> Genres { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            => optionsBuilder.UseSqlite(@"Data Source=AcmeBooks.sqlite");
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+      
+            modelBuilder.Entity<Genre>().HasData(
+                new Genre { Id = 1, Title = "Classic", Description = "Classic literature" },
+                new Genre { Id = 2, Title = "Mystery", Description = "Mystery and thrillers" },
+                new Genre { Id = 3, Title = "Fantasy", Description = "Fantasy literature" },
+                new Genre { Id = 4, Title = "Science Fiction", Description = "Science fiction literature" },
+                new Genre { Id = 5, Title = "Romance", Description = "Romantic literature" },
+                new Genre { Id = 6, Title = "Horror", Description = "Horror literature" },
+                new Genre { Id = 7, Title = "Non-Fiction", Description = "Non-fiction literature" },
+                new Genre { Id = 8, Title = "Biography", Description = "Biographies" },
+                new Genre { Id = 9, Title = "Historical", Description = "Historical works" },
+                new Genre { Id = 10, Title = "Adventure", Description = "Adventure literature" }
+            );
+
+            modelBuilder.Entity<Author>().HasData(
+                new Author { Id = 1, FirstName = "William", LastName = "Shakespeare", Biography = "English playwright, poet, and actor", BirthDate = new DateTime(1564, 4, 26), Email = "william.shakespeare@example.com" },
+                new Author { Id = 2, FirstName = "Jane", LastName = "Austen", Biography = "English novelist known for her romance novels", BirthDate = new DateTime(1775, 12, 16), Email = "jane.austen@example.com" },
+                new Author { Id = 3, FirstName = "Mark", LastName = "Twain", Biography = "American writer, humorist, and lecturer", BirthDate = new DateTime(1835, 11, 30), Email = "mark.twain@example.com" },
+                new Author { Id = 4, FirstName = "Charles", LastName = "Dickens", Biography = "English writer and social critic", BirthDate = new DateTime(1812, 2, 7), Email = "charles.dickens@example.com" },
+                new Author { Id = 5, FirstName = "Herman", LastName = "Melville", Biography = "American novelist, short story writer, and poet", BirthDate = new DateTime(1819, 8, 1), Email = "herman.melville@example.com" },
+                new Author { Id = 6, FirstName = "Mary", LastName = "Shelley", Biography = "English novelist best known for her Gothic novel Frankenstein", BirthDate = new DateTime(1797, 8, 30), Email = "mary.shelley@example.com" },
+                new Author { Id = 7, FirstName = "George", LastName = "Orwell", Biography = "English novelist, essayist, and critic", BirthDate = new DateTime(1903, 6, 25), Email = "george.orwell@example.com" },
+                new Author { Id = 8, FirstName = "J.R.R.", LastName = "Tolkien", Biography = "English writer, poet, philologist, and academic", BirthDate = new DateTime(1892, 1, 3), Email = "jrr.tolkien@example.com" },
+                new Author { Id = 9, FirstName = "Harper", LastName = "Lee", Biography = "American novelist widely known for 'To Kill a Mockingbird'", BirthDate = new DateTime(1926, 4, 28), Email = "harper.lee@example.com" },
+                new Author { Id = 10, FirstName = "Bram", LastName = "Stoker", Biography = "Irish author best known for his Gothic horror novel Dracula", BirthDate = new DateTime(1847, 11, 8), Email = "bram.stoker@example.com" },
+                new Author { Id = 11, FirstName = "J.D.", LastName = "Salinger", Biography = "American writer known for his iconic novel 'The Catcher in the Rye'", BirthDate = new DateTime(1919, 1, 1), Email = "jd.salinger@example.com" },
+                new Author { Id = 12, FirstName = "F. Scott", LastName = "Fitzgerald", Biography = "American novelist and short story writer", BirthDate = new DateTime(1896, 9, 24), Email = "f.scott.fitzgerald@example.com" },
+                new Author { Id = 13, FirstName = "Leo", LastName = "Tolstoy", Biography = "Russian writer who is regarded as one of the greatest authors of all time", BirthDate = new DateTime(1828, 9, 9), Email = "leo.tolstoy@example.com" },
+                new Author { Id = 14, FirstName = "Fyodor", LastName = "Dostoevsky", Biography = "Russian novelist, short story writer, essayist, journalist, and philosopher", BirthDate = new DateTime(1821, 11, 11), Email = "fyodor.dostoevsky@example.com" },
+                new Author { Id = 15, FirstName = "Homer", LastName = "", Biography = "Legendary ancient Greek poet traditionally said to be the author of the epic poems the Iliad and the Odyssey", BirthDate = new DateTime(-800, 1, 1), Email = "homer@example.com" },
+                new Author { Id = 16, FirstName = "Aldous", LastName = "Huxley", Biography = "English writer and philosopher", BirthDate = new DateTime(1894, 7, 26), Email = "aldous.huxley@example.com" },
+                new Author { Id = 17, FirstName = "Dante", LastName = "Alighieri", Biography = "Italian poet, writer, and philosopher", BirthDate = new DateTime(1265, 1, 1), Email = "dante.alighieri@example.com" }
+            );
+
+            modelBuilder.Entity<Book>().HasData(
+                new Book { Id = 1, Title = "Hamlet", ISBN = "978-1-86197-271-0", AuthorId = 1, GenreId = 1, PublishDate = new DateTime(1603, 1, 1), Language = Language.English, Publisher = "Penguin" },
+                new Book { Id = 2, Title = "Pride and Prejudice", ISBN = "978-0-316-76948-8", AuthorId = 2, GenreId = 1, PublishDate = new DateTime(1813, 1, 28), Language = Language.English, Publisher = "Penguin" },
+                new Book { Id = 3, Title = "Adventures of Huckleberry Finn", ISBN = "978-0-7432-7356-5", AuthorId = 3, GenreId = 1, PublishDate = new DateTime(1884, 12, 10), Language = Language.English, Publisher = "Harper & Brothers" },
+                new Book { Id = 4, Title = "Great Expectations", ISBN = "978-0-141-43956-6", AuthorId = 4, GenreId = 1, PublishDate = new DateTime(1861, 8, 1), Language = Language.English, Publisher = "Chapman & Hall" },
+                new Book { Id = 5, Title = "Moby-Dick", ISBN = "978-0-486-46730-0", AuthorId = 5, GenreId = 1, PublishDate = new DateTime(1851, 11, 14), Language = Language.English, Publisher = "Harper & Brothers" },
+                new Book { Id = 6, Title = "Frankenstein", ISBN = "978-0-14-143947-1", AuthorId = 1, GenreId = 6, PublishDate = new DateTime(1818, 1, 1), Language = Language.English, Publisher = "Lackington, Hughes, Harding, Mavor & Jones" },
+                new Book { Id = 7, Title = "1984", ISBN = "978-0-452-28423-4", AuthorId = 2, GenreId = 4, PublishDate = new DateTime(1949, 6, 8), Language = Language.English, Publisher = "Secker & Warburg" },
+                new Book { Id = 8, Title = "The Hobbit", ISBN = "978-0-618-00221-3", AuthorId = 3, GenreId = 3, PublishDate = new DateTime(1937, 9, 21), Language = Language.English, Publisher = "George Allen & Unwin" },
+                new Book { Id = 9, Title = "To Kill a Mockingbird", ISBN = "978-0-06-112008-4", AuthorId = 4, GenreId = 9, PublishDate = new DateTime(1960, 7, 11), Language = Language.English, Publisher = "J. B. Lippincott & Co." },
+                new Book { Id = 10, Title = "Dracula", ISBN = "978-0-452-01074-1", AuthorId = 5, GenreId = 6, PublishDate = new DateTime(1897, 5, 26), Language = Language.English, Publisher = "Archibald Constable and Company" },
+                new Book { Id = 11, Title = "The Catcher in the Rye", ISBN = "978-0-316-76948-3", AuthorId = 2, GenreId = 1, PublishDate = new DateTime(1951, 7, 16), Language = Language.English, Publisher = "Little, Brown and Company" },
+                new Book { Id = 12, Title = "The Great Gatsby", ISBN = "978-0-7432-7356-1", AuthorId = 3, GenreId = 10, PublishDate = new DateTime(1925, 4, 10), Language = Language.English, Publisher = "Charles Scribner's Sons" },
+                new Book { Id = 13, Title = "War and Peace", ISBN = "978-0-14-044793-4", AuthorId = 4, GenreId = 9, PublishDate = new DateTime(1869, 1, 1), Language = Language.Russian, Publisher = "The Russian Messenger" },
+                new Book { Id = 14, Title = "Crime and Punishment", ISBN = "978-0-14-044913-6", AuthorId = 5, GenreId = 9, PublishDate = new DateTime(1866, 1, 1), Language = Language.Russian, Publisher = "The Russian Messenger" },
+                new Book { Id = 15, Title = "The Odyssey", ISBN = "978-0-14-026886-7", AuthorId = 5, GenreId = 10, PublishDate = new DateTime(-800, 1, 1), Language = Language.Greek, Publisher = "Penguin Classics" },
+                new Book { Id = 16, Title = "Brave New World", ISBN = "978-0-06-085052-4", AuthorId = 1, GenreId = 4, PublishDate = new DateTime(1932, 8, 31), Language = Language.English, Publisher = "Chatto & Windus" },
+                new Book { Id = 17, Title = "The Divine Comedy", ISBN = "978-0-14-243722-3", AuthorId = 2, GenreId = 10, PublishDate = new DateTime(1320, 1, 1), Language = Language.Italian, Publisher = "Penguin Classics" },
+                new Book { Id = 18, Title = "Les Misérables", ISBN = "978-0-14-044430-8", AuthorId = 3, GenreId = 9, PublishDate = new DateTime(1862, 1, 1), Language = Language.French, Publisher = "A. Lacroix, Verboeckhoven & Cie" },
+                new Book { Id = 19, Title = "Don Quixote", ISBN = "978-0-14-243723-0", AuthorId = 4, GenreId = 10, PublishDate = new DateTime(1605, 1, 16), Language = Language.Spanish, Publisher = "Francisco de Robles" },
+                new Book { Id = 20, Title = "Ulysses", ISBN = "978-0-679-72232-3", AuthorId = 5, GenreId = 10, PublishDate = new DateTime(1922, 2, 2), Language = Language.English, Publisher = "Shakespeare and Company" }
+                                
+            );
+            
+            // Configuring the many-to-many relationship
+            modelBuilder.Entity<Order>()
+                .HasMany(o => o.Customers);
+            
+            
+
+
+
+            
+        }
+    }
+}

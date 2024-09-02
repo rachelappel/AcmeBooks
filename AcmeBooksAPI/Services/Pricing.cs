@@ -20,7 +20,6 @@
 
             decimal totalPrice = numberOfBooks * pricePerBook;
             decimal discountAmount = totalPrice * discount;
-
             return totalPrice - discountAmount;
         }
     }
