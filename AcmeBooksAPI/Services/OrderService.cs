@@ -9,7 +9,7 @@ public class OrderService
         
     }
     
-    public decimal PlaceOrder(Order order)
+    public decimal FinalizeOrder(Order order)
     {
         return 0;
 
