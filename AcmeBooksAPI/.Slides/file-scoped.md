@@ -15,7 +15,7 @@
 * Can reuse the same type names in other files
 
 ***
-[Code]()
+[Code](../Services/BookInventoryManager.cs)
 <br>
 [Main](main.md)
 ***

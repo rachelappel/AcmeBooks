@@ -1,15 +1,11 @@
  ## Modern C# features
 
-1. [Top-level statements](top-level-statements.md) 
-2. [Global usings](global-usings.md)
-3. [File-scoped types](file-scoped.md)
+1. [Top-level statements](top-level-statements.md) x 
+2. [Global usings](global-usings.md) x
+3. [File-scoped types](file-scoped.md) x
 4. [Nullable references](nullable.md)
-5. [Raw strings](raw-strings.md)
-
-
-
-
-6. [String interpolation](string-interpolation.md)
+5. [Raw strings](raw-strings.md) --inventory, orders printout message--
+6. [String interpolation](string-interpolation.md) x
 7. [Init-only setters](init-only-setters.md)
 8. [Record types](record-types.md)
 9. [Primary ctors](primary-ctor.md)

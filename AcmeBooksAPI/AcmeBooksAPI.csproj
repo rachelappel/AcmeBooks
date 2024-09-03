@@ -17,6 +17,7 @@
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
           <PrivateAssets>all</PrivateAssets>
         </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.4" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
 
@@ -36,6 +37,7 @@
       <Content Include=".Slides\params-collection.md" />
       <Content Include=".Slides\partial-properties.md" />
       <Content Include=".Slides\pattern-matching.md" />
+      <Content Include=".Slides\prep.md" />
       <Content Include=".Slides\primary-ctor.md" />
       <Content Include=".Slides\raw-strings.md" />
       <Content Include=".Slides\record-types.md" />
@@ -44,7 +46,6 @@
       <Content Include=".Slides\rider.jpg" />
       <Content Include=".Slides\rider.png" />
       <Content Include=".Slides\string-interpolation.md" />
-      <Content Include=".Slides\style.css" />
       <Content Include=".Slides\switch-expression.md" />
       <Content Include=".Slides\top-level-statements.md" />
     </ItemGroup>

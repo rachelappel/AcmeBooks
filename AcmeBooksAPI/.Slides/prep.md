@@ -1,0 +1,1 @@
+﻿* [BookInventoryManager](../Services/BookInventoryManager.cs) change namespace

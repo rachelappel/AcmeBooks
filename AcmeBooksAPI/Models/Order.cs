@@ -2,8 +2,6 @@
 
 namespace AcmeBooksAPI.Models
 {
-
-
     public class Order
     {
         // customer can be null if the sale is in the bookstore

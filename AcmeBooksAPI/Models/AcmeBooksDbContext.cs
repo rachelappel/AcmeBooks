@@ -47,9 +47,7 @@ namespace AcmeBooks.Models
                 new Author { Id = 12, FirstName = "F. Scott", LastName = "Fitzgerald", Biography = "American novelist and short story writer", BirthDate = new DateTime(1896, 9, 24), Email = "f.scott.fitzgerald@example.com" },
                 new Author { Id = 13, FirstName = "Leo", LastName = "Tolstoy", Biography = "Russian writer who is regarded as one of the greatest authors of all time", BirthDate = new DateTime(1828, 9, 9), Email = "leo.tolstoy@example.com" },
                 new Author { Id = 14, FirstName = "Fyodor", LastName = "Dostoevsky", Biography = "Russian novelist, short story writer, essayist, journalist, and philosopher", BirthDate = new DateTime(1821, 11, 11), Email = "fyodor.dostoevsky@example.com" },
-                new Author { Id = 15, FirstName = "Homer", LastName = "", Biography = "Legendary ancient Greek poet traditionally said to be the author of the epic poems the Iliad and the Odyssey", BirthDate = new DateTime(-800, 1, 1), Email = "homer@example.com" },
-                new Author { Id = 16, FirstName = "Aldous", LastName = "Huxley", Biography = "English writer and philosopher", BirthDate = new DateTime(1894, 7, 26), Email = "aldous.huxley@example.com" },
-                new Author { Id = 17, FirstName = "Dante", LastName = "Alighieri", Biography = "Italian poet, writer, and philosopher", BirthDate = new DateTime(1265, 1, 1), Email = "dante.alighieri@example.com" }
+                new Author { Id = 16, FirstName = "Aldous", LastName = "Huxley", Biography = "English writer and philosopher", BirthDate = new DateTime(1894, 7, 26), Email = "aldous.huxley@example.com" }
             );
 
             modelBuilder.Entity<Book>().HasData(
@@ -67,7 +65,6 @@ namespace AcmeBooks.Models
                 new Book { Id = 12, Title = "The Great Gatsby", ISBN = "978-0-7432-7356-1", AuthorId = 3, GenreId = 10, PublishDate = new DateTime(1925, 4, 10), Language = Language.English, Publisher = "Charles Scribner's Sons" },
                 new Book { Id = 13, Title = "War and Peace", ISBN = "978-0-14-044793-4", AuthorId = 4, GenreId = 9, PublishDate = new DateTime(1869, 1, 1), Language = Language.Russian, Publisher = "The Russian Messenger" },
                 new Book { Id = 14, Title = "Crime and Punishment", ISBN = "978-0-14-044913-6", AuthorId = 5, GenreId = 9, PublishDate = new DateTime(1866, 1, 1), Language = Language.Russian, Publisher = "The Russian Messenger" },
-                new Book { Id = 15, Title = "The Odyssey", ISBN = "978-0-14-026886-7", AuthorId = 5, GenreId = 10, PublishDate = new DateTime(-800, 1, 1), Language = Language.Greek, Publisher = "Penguin Classics" },
                 new Book { Id = 16, Title = "Brave New World", ISBN = "978-0-06-085052-4", AuthorId = 1, GenreId = 4, PublishDate = new DateTime(1932, 8, 31), Language = Language.English, Publisher = "Chatto & Windus" },
                 new Book { Id = 17, Title = "The Divine Comedy", ISBN = "978-0-14-243722-3", AuthorId = 2, GenreId = 10, PublishDate = new DateTime(1320, 1, 1), Language = Language.Italian, Publisher = "Penguin Classics" },
                 new Book { Id = 18, Title = "Les Misérables", ISBN = "978-0-14-044430-8", AuthorId = 3, GenreId = 9, PublishDate = new DateTime(1862, 1, 1), Language = Language.French, Publisher = "A. Lacroix, Verboeckhoven & Cie" },
