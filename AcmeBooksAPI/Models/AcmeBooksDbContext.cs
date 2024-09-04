@@ -75,9 +75,14 @@ namespace AcmeBooks.Models
                 new Book { Id = 20, Title = "Ulysses", ISBN = "978-0-679-72232-3", AuthorId = 5, GenreId = 10, PublishDate = new DateTime(1922, 2, 2), Language = Language.English, Publisher = "Shakespeare and Company" }
             );
             
-            modelBuilder.Entity<Order>()
+            /*modelBuilder.Entity<Order>()
                 .HasOne(o => o.Customer);
            
+            modelBuilder.Entity<Order>()
+                .HasMany(o => o.OrderItems)
+                .WithOne()
+                .HasForeignKey(oi => oi.OrderId);*/
+                    
             modelBuilder.Entity<Customer>().HasData(
                 new Customer { Id = 1, Name = "Springfield Elementary School"},
                 new Customer { Id = 2, Name = "West End High School"},
@@ -87,17 +92,13 @@ namespace AcmeBooks.Models
             modelBuilder.Entity<Order>().HasData(
                 new Order { Id = 1, CustomerId = 1, OrderDate = new DateTime(2023, 10, 1), TotalAmount = 100.50m },
                 new Order { Id = 2, CustomerId = 2, OrderDate = new DateTime(2023, 10, 2), TotalAmount = 200.75m }
-                /*new Order { Id = 3, CustomerId = null, OrderDate = new DateTime(2023, 10, 3), TotalAmount = 300.25m }*/
             );
             
-            
         modelBuilder.Entity<OrderItem>().HasData(
-            new OrderItem { Id = 1, OrderId = 1, BookId = 1, Quantity = 1, Price = 50.25m },
-            new OrderItem { Id = 2, OrderId = 1, BookId = 2, Quantity = 1, Price = 50.25m },
-            new OrderItem { Id = 3, OrderId = 2, BookId = 3, Quantity = 2, Price = 100.375m },
-            new OrderItem { Id = 4, OrderId = 2, BookId = 4, Quantity = 1, Price = 100.375m }
-            /*new OrderItem { Id = 5, OrderId = 3, BookId = 5, Quantity = 1, Price = 100.125m },
-            new OrderItem { Id = 6, OrderId = 3, BookId = 6, Quantity = 2, Price = 100.125m }*/
+            new OrderItem { Id = 1, OrderId = 2, ISBN = "978-0-14-044793-4", Quantity = 1, Price = 50.25m },
+            new OrderItem { Id = 2, OrderId = 2, ISBN = "978-0-141-43956-6", Quantity = 1, Price = 50.25m },
+            new OrderItem { Id = 3, OrderId = 2, ISBN = "978-0-316-76948-8", Quantity = 2, Price = 100.375m },
+            new OrderItem { Id = 4, OrderId = 2, ISBN = "978-0-452-01074-1", Quantity = 1, Price = 100.375m }
         );
                 }
     }

@@ -14,7 +14,7 @@ namespace AcmeBooksAPI.Models
 
         public DateTime OrderDate { get; set; }
         public Customer? Customer { get; set; }
-        public ICollection<OrderItem> Items { get; set; } = new List<OrderItem>();
+        public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
         public decimal TotalAmount { get; set; }
         public int? CustomerId { get; set; }
     }
@@ -25,11 +25,11 @@ namespace AcmeBooksAPI.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public Book Book { get; set; }
         public int Quantity { get; set; }
         public decimal Price { get; set; }
         public int OrderId { get; set; }
-        public int BookId { get; set; }
+        public Order Order { get; set; }
+        public string ISBN { get; set; }
     }
 }
 

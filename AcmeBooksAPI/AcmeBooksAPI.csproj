@@ -47,4 +47,8 @@
       <Content Include=".Slides\top-level-statements.md" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Migrations\" />
+    </ItemGroup>
+
 </Project>
