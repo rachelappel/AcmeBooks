@@ -29,7 +29,10 @@ namespace AcmeBooksAPI.Models
         public decimal Price { get; set; }
         public int OrderId { get; set; }
         public Order Order { get; set; }
+        [StringLength(13)]
         public string ISBN { get; set; }
+        [StringLength(250)]
+        public string BookTitle { get; set; }
     }
 }
 

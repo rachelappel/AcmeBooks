@@ -1,4 +1,5 @@
 using AcmeBooks.Models;
+using AcmeBooksAPI.Models;
 using AcmeBooksAPI.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,11 +21,15 @@ namespace AcmeBooksAPI
                     options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
                 });
             
+            builder.Services.AddScoped<OrderService>();
+            builder.Services.AddTransient<Order>();
+            builder.Services.AddTransient<OrderItem>();
+            builder.Services.AddTransient<Customer>();
             
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -40,8 +45,11 @@ namespace AcmeBooksAPI
 
 
             app.MapControllers();
+            
             StaffPicks picks = new StaffPicks();
             picks.PickBooks();
+
+            
             app.Run();
 
 

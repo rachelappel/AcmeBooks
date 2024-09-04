@@ -95,10 +95,10 @@ namespace AcmeBooks.Models
             );
             
         modelBuilder.Entity<OrderItem>().HasData(
-            new OrderItem { Id = 1, OrderId = 2, ISBN = "978-0-14-044793-4", Quantity = 1, Price = 50.25m },
-            new OrderItem { Id = 2, OrderId = 2, ISBN = "978-0-141-43956-6", Quantity = 1, Price = 50.25m },
-            new OrderItem { Id = 3, OrderId = 2, ISBN = "978-0-316-76948-8", Quantity = 2, Price = 100.375m },
-            new OrderItem { Id = 4, OrderId = 2, ISBN = "978-0-452-01074-1", Quantity = 1, Price = 100.375m }
+            new OrderItem { Id = 1, OrderId = 2, ISBN = "978-0-14-044793-4", BookTitle = "War and Peace", Quantity = 1, Price = 50.25m },
+            new OrderItem { Id = 2, OrderId = 2, ISBN = "978-0-141-43956-6", BookTitle = "Great Expectations", Quantity = 1, Price = 50.25m },
+            new OrderItem { Id = 3, OrderId = 2, ISBN = "978-0-316-76948-8", BookTitle = "Pride and Prejudice", Quantity = 2, Price = 100.375m },
+            new OrderItem { Id = 4, OrderId = 2, ISBN = "978-0-452-01074-1", BookTitle = "Dracula", Quantity = 1, Price = 100.375m }
         );
                 }
     }
