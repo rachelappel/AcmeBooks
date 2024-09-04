@@ -12,6 +12,9 @@ namespace AcmeBooks.Models
         public DbSet<Author> Authors { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<Genre> Genres { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseSqlite(@"Data Source=AcmeBooks.sqlite");
@@ -70,18 +73,32 @@ namespace AcmeBooks.Models
                 new Book { Id = 18, Title = "Les Misérables", ISBN = "978-0-14-044430-8", AuthorId = 3, GenreId = 9, PublishDate = new DateTime(1862, 1, 1), Language = Language.French, Publisher = "A. Lacroix, Verboeckhoven & Cie" },
                 new Book { Id = 19, Title = "Don Quixote", ISBN = "978-0-14-243723-0", AuthorId = 4, GenreId = 10, PublishDate = new DateTime(1605, 1, 16), Language = Language.Spanish, Publisher = "Francisco de Robles" },
                 new Book { Id = 20, Title = "Ulysses", ISBN = "978-0-679-72232-3", AuthorId = 5, GenreId = 10, PublishDate = new DateTime(1922, 2, 2), Language = Language.English, Publisher = "Shakespeare and Company" }
-                                
             );
             
-            // Configuring the many-to-many relationship
             modelBuilder.Entity<Order>()
-                .HasMany(o => o.Customers);
+                .HasOne(o => o.Customer);
+           
+            modelBuilder.Entity<Customer>().HasData(
+                new Customer { Id = 1, Name = "Springfield Elementary School"},
+                new Customer { Id = 2, Name = "West End High School"},
+                new Customer { Id = 3, Name = "Legacy University"}
+            );
+            
+            modelBuilder.Entity<Order>().HasData(
+                new Order { Id = 1, CustomerId = 1, OrderDate = new DateTime(2023, 10, 1), TotalAmount = 100.50m },
+                new Order { Id = 2, CustomerId = 2, OrderDate = new DateTime(2023, 10, 2), TotalAmount = 200.75m }
+                /*new Order { Id = 3, CustomerId = null, OrderDate = new DateTime(2023, 10, 3), TotalAmount = 300.25m }*/
+            );
             
             
-
-
-
-            
-        }
+        modelBuilder.Entity<OrderItem>().HasData(
+            new OrderItem { Id = 1, OrderId = 1, BookId = 1, Quantity = 1, Price = 50.25m },
+            new OrderItem { Id = 2, OrderId = 1, BookId = 2, Quantity = 1, Price = 50.25m },
+            new OrderItem { Id = 3, OrderId = 2, BookId = 3, Quantity = 2, Price = 100.375m },
+            new OrderItem { Id = 4, OrderId = 2, BookId = 4, Quantity = 1, Price = 100.375m }
+            /*new OrderItem { Id = 5, OrderId = 3, BookId = 5, Quantity = 1, Price = 100.125m },
+            new OrderItem { Id = 6, OrderId = 3, BookId = 6, Quantity = 2, Price = 100.125m }*/
+        );
+                }
     }
 }
