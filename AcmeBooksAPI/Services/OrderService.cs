@@ -26,21 +26,54 @@ public class OrderService
     
     public string FinalizeAndPrintOrder()
     {
-        var booksList = "Books: \n";
+        // straight to raw string
+        var xmlOrder =
+            $@"<order orderId=""{order.Id}"" 
+            orderDate=""{order.OrderDate.ToShortDateString()}""  
+            totalAmount=""{order.TotalAmount}""> 
+            <customer id=""{order.CustomerId}"" 
+            name=""{order.Customer.Name}"">";
+
+        // convert to interpolation then raw string
+        var xmlOrder2 = 
+            "<order id=\"" + order.Id  + "\"" + 
+            "orderDate=\"" + order.OrderDate.ToString("yyyy-MM-dd") + "\"" +
+            " total=\"" + order.TotalAmount + "\">" +
+            "<customer id=\"" + order.Customer.Id + "\">" + order.Customer.Name + 
+            "</customer>" +
+            "</order>";
+        
+        /*var xmlOrder2 = 
+            "<order id=\"" + order.Id  + "\"" + 
+            "orderDate=\"" + order.OrderDate.ToString("yyyy-MM-dd") + "\"" +
+            " total=\"" + order.TotalAmount + "\">" +
+            "<customer id=\"" + order.Customer.Id + "\">" + order.Customer.Name + 
+            "</customer>" +
+            "</order>";*/
+        
+        /*var xmlOrder2 =
+            @"<order id='" + order.Id  + "'" +
+            " orderDate='" + order.OrderDate.ToString("yyyy-MM-dd") + "'" +
+            " total='" + order.TotalAmount + "'>" +
+            "<customer id='" + order.Customer.Id + "'>" + order.Customer.Name +
+            "</customer>" +
+            "</order>";*/
+
+        var booksList="";
         foreach (var orderItem in order.OrderItems)
         {
-            booksList += orderItem.BookTitle + "\n";
+            booksList +=   orderItem.BookTitle  + "\n";
             order.TotalAmount += (orderItem.Price * orderItem.Quantity);
         }
 
-        var summary = @"-----------------------" + "\n"
+        /*var summary = @"-----------------------" + "\n"
              + "Customer :" + order.Customer.Name + "\n"
              + "Order #: " + order.Id + "\n"
              + "Date: " + order.OrderDate + "\n"
              + "Total: " + order.TotalAmount + "\n"
              + "-----------------------" + "\n"
-             + booksList;
+             + booksList;*/
         
-        return summary;
+        return xmlOrder;
     }
 }
