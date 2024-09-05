@@ -42,18 +42,11 @@ namespace AcmeBooksAPI
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
-
+            
             app.MapControllers();
             
-            StaffPicks picks = new StaffPicks();
-            picks.PickBooks();
-
-            
             app.Run();
-
-
-
+            
         }
     }
 }

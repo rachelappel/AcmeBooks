@@ -1,20 +1,30 @@
-﻿using AcmeBooksAPI.Models;
+﻿using AcmeBooks.Models;
+using AcmeBooksAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AcmeBooksAPI.Services
 {
-    public class StaffPicks
-    {
+    public class StaffPick
+    { 
+ 
+        public string QuickPicks(string[] ISBNs)
+        {
+            // move this to the controller
+            return "";
+        }
+       
+        
         private readonly HttpClient _httpClient;
         private readonly string _staffPicksUrl;
 
-        public StaffPicks()
+        public StaffPick()
         {
             _httpClient = new HttpClient();
             /*_httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));*/
             _staffPicksUrl = "https://localhost:7090/api/books/staffpicks"; 
         }
 
-        public async Task PickBooks()
+        public async Task WeeklyPicks()
         {
             try
             {

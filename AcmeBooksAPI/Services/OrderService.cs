@@ -5,7 +5,7 @@ namespace AcmeBooksAPI.Services;
 public class OrderService
 {
     public Order order { get; set; }
-    public OrderService(Customer customer)
+    public OrderService(Customer? customer)
     {
         order = new Order  { Id=new Random().Next(10000), OrderDate = DateTime.Today };
         if (customer == null)
@@ -34,6 +34,16 @@ public class OrderService
             <customer id=""{order.CustomerId}"" 
             name=""{order.Customer.Name}"">";
 
+        var booksList="";
+        foreach (var orderItem in order.OrderItems)
+        {
+            booksList +=   orderItem.BookTitle  + "\n";
+            
+            order.TotalAmount += (orderItem.Price * orderItem.Quantity);
+        }
+        
+        xmlOrder += "";
+        
         // convert to interpolation then raw string
         var xmlOrder2 = 
             "<order id=\"" + order.Id  + "\"" + 
@@ -43,37 +53,34 @@ public class OrderService
             "</customer>" +
             "</order>";
         
-        /*var xmlOrder2 = 
-            "<order id=\"" + order.Id  + "\"" + 
-            "orderDate=\"" + order.OrderDate.ToString("yyyy-MM-dd") + "\"" +
-            " total=\"" + order.TotalAmount + "\">" +
-            "<customer id=\"" + order.Customer.Id + "\">" + order.Customer.Name + 
-            "</customer>" +
-            "</order>";*/
-        
-        /*var xmlOrder2 =
-            @"<order id='" + order.Id  + "'" +
-            " orderDate='" + order.OrderDate.ToString("yyyy-MM-dd") + "'" +
-            " total='" + order.TotalAmount + "'>" +
-            "<customer id='" + order.Customer.Id + "'>" + order.Customer.Name +
-            "</customer>" +
-            "</order>";*/
-
-        var booksList="";
-        foreach (var orderItem in order.OrderItems)
-        {
-            booksList +=   orderItem.BookTitle  + "\n";
-            order.TotalAmount += (orderItem.Price * orderItem.Quantity);
-        }
-
-        /*var summary = @"-----------------------" + "\n"
-             + "Customer :" + order.Customer.Name + "\n"
-             + "Order #: " + order.Id + "\n"
-             + "Date: " + order.OrderDate + "\n"
-             + "Total: " + order.TotalAmount + "\n"
-             + "-----------------------" + "\n"
-             + booksList;*/
-        
         return xmlOrder;
     }
 }
+
+
+
+
+        
+/*var xmlOrder2 =
+    "<order id=\"" + order.Id  + "\"" +
+    "orderDate=\"" + order.OrderDate.ToString("yyyy-MM-dd") + "\"" +
+    " total=\"" + order.TotalAmount + "\">" +
+    "<customer id=\"" + order.Customer.Id + "\">" + order.Customer.Name +
+    "</customer>" +
+    "</order>";*/
+        
+/*var xmlOrder2 =
+    @"<order id='" + order.Id  + "'" +
+    " orderDate='" + order.OrderDate.ToString("yyyy-MM-dd") + "'" +
+    " total='" + order.TotalAmount + "'>" +
+    "<customer id='" + order.Customer.Id + "'>" + order.Customer.Name +
+    "</customer>" +
+    "</order>";*/
+    
+/*var summary = @"-----------------------" + "\n"
+ + "Customer :" + order.Customer.Name + "\n"
+ + "Order #: " + order.Id + "\n"
+ + "Date: " + order.OrderDate + "\n"
+ + "Total: " + order.TotalAmount + "\n"
+ + "-----------------------" + "\n"
+ + booksList;*/
