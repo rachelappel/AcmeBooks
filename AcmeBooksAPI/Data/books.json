@@ -1,0 +1,211 @@
+[
+  {
+    "Id": 1,
+    "Title": "Hamlet",
+    "ISBN": "978-1-86197-271-0",
+    "AuthorId": 1,
+    "GenreId": 1,
+    "PublishDate": "1603-01-01T00:00:00",
+    "Language": "English",
+    "Publisher": "Penguin",
+    "Quantity": 10
+  },
+  {
+    "Id": 2,
+    "Title": "Pride and Prejudice",
+    "ISBN": "978-0-316-76948-8",
+    "AuthorId": 2,
+    "GenreId": 1,
+    "PublishDate": "1813-01-28T00:00:00",
+    "Language": "English",
+    "Publisher": "Penguin",
+    "Quantity": 14
+  },
+  {
+    "Id": 3,
+    "Title": "Adventures of Huckleberry Finn",
+    "ISBN": "978-0-7432-7356-5",
+    "AuthorId": 3,
+    "GenreId": 1,
+    "PublishDate": "1884-12-10T00:00:00",
+    "Language": "English",
+    "Publisher": "Harper & Brothers",
+    "Quantity": 3
+  },
+  {
+    "Id": 4,
+    "Title": "Great Expectations",
+    "ISBN": "978-0-141-43956-6",
+    "AuthorId": 4,
+    "GenreId": 1,
+    "PublishDate": "1861-08-01T00:00:00",
+    "Language": "English",
+    "Publisher": "Chapman & Hall",
+    "Quantity": 6
+  },
+  {
+    "Id": 5,
+    "Title": "Moby-Dick",
+    "ISBN": "978-0-486-46730-0",
+    "AuthorId": 5,
+    "GenreId": 1,
+    "PublishDate": "1851-11-14T00:00:00",
+    "Language": "English",
+    "Publisher": "Harper & Brothers",
+    "Quantity": 11
+  },
+  {
+    "Id": 6,
+    "Title": "Frankenstein",
+    "ISBN": "978-0-14-143947-1",
+    "AuthorId": 1,
+    "GenreId": 6,
+    "PublishDate": "1818-01-01T00:00:00",
+    "Language": "English",
+    "Publisher": "Lackington, Hughes, Harding, Mavor & Jones",
+    "Quantity": 2
+  },
+  {
+    "Id": 7,
+    "Title": "1984",
+    "ISBN": "978-0-452-28423-4",
+    "AuthorId": 2,
+    "GenreId": 4,
+    "PublishDate": "1949-06-08T00:00:00",
+    "Language": "English",
+    "Publisher": "Secker & Warburg",
+    "Quantity": 8
+  },
+  {
+    "Id": 8,
+    "Title": "The Hobbit",
+    "ISBN": "978-0-618-00221-3",
+    "AuthorId": 3,
+    "GenreId": 3,
+    "PublishDate": "1937-09-21T00:00:00",
+    "Language": "English",
+    "Publisher": "George Allen & Unwin",
+    "Quantity": 0
+  },
+  {
+    "Id": 9,
+    "Title": "To Kill a Mockingbird",
+    "ISBN": "978-0-06-112008-4",
+    "AuthorId": 4,
+    "GenreId": 9,
+    "PublishDate": "1960-07-11T00:00:00",
+    "Language": "English",
+    "Publisher": "J. B. Lippincott & Co.",
+    "Quantity": 7
+  },
+  {
+    "Id": 10,
+    "Title": "Dracula",
+    "ISBN": "978-0-452-01074-1",
+    "AuthorId": 5,
+    "GenreId": 6,
+    "PublishDate": "1897-05-26T00:00:00",
+    "Language": "English",
+    "Publisher": "Archibald Constable and Company",
+    "Quantity": 5
+  },
+  {
+    "Id": 11,
+    "Title": "The Catcher in the Rye",
+    "ISBN": "978-0-316-76948-3",
+    "AuthorId": 2,
+    "GenreId": 1,
+    "PublishDate": "1951-07-16T00:00:00",
+    "Language": "English",
+    "Publisher": "Little, Brown and Company",
+    "Quantity": 11
+  },
+  {
+    "Id": 12,
+    "Title": "The Great Gatsby",
+    "ISBN": "978-0-7432-7356-1",
+    "AuthorId": 3,
+    "GenreId": 10,
+    "PublishDate": "1925-04-10T00:00:00",
+    "Language": "English",
+    "Publisher": "Charles Scribner's Sons",
+    "Quantity": 12
+  },
+  {
+    "Id": 13,
+    "Title": "War and Peace",
+    "ISBN": "978-0-14-044793-4",
+    "AuthorId": 4,
+    "GenreId": 9,
+    "PublishDate": "1869-01-01T00:00:00",
+    "Language": "Russian",
+    "Publisher": "The Russian Messenger",
+    "Quantity": 15
+  },
+  {
+    "Id": 14,
+    "Title": "Crime and Punishment",
+    "ISBN": "978-0-14-044913-6",
+    "AuthorId": 5,
+    "GenreId": 9,
+    "PublishDate": "1866-01-01T00:00:00",
+    "Language": "Russian",
+    "Publisher": "The Russian Messenger",
+    "Quantity": 4
+  },
+  {
+    "Id": 16,
+    "Title": "Brave New World",
+    "ISBN": "978-0-06-085052-4",
+    "AuthorId": 1,
+    "GenreId": 4,
+    "PublishDate": "1932-08-31T00:00:00",
+    "Language": "English",
+    "Publisher": "Chatto & Windus",
+    "Quantity": 12
+  },
+  {
+    "Id": 17,
+    "Title": "The Divine Comedy",
+    "ISBN": "978-0-14-243722-3",
+    "AuthorId": 2,
+    "GenreId": 10,
+    "PublishDate": "1320-01-01T00:00:00",
+    "Language": "Italian",
+    "Publisher": "Penguin Classics",
+    "Quantity": 13
+  },
+  {
+    "Id": 18,
+    "Title": "Les Misérables",
+    "ISBN": "978-0-14-044430-8",
+    "AuthorId": 3,
+    "GenreId": 9,
+    "PublishDate": "1862-01-01T00:00:00",
+    "Language": "French",
+    "Publisher": "A. Lacroix, Verboeckhoven & Cie",
+    "Quantity": 9
+  },
+  {
+    "Id": 19,
+    "Title": "Don Quixote",
+    "ISBN": "978-0-14-243723-0",
+    "AuthorId": 4,
+    "GenreId": 10,
+    "PublishDate": "1605-01-16T00:00:00",
+    "Language": "Spanish",
+    "Publisher": "Francisco de Robles",
+    "Quantity": 7
+  },
+  {
+    "Id": 20,
+    "Title": "Ulysses",
+    "ISBN": "978-0-679-72232-3",
+    "AuthorId": 5,
+    "GenreId": 10,
+    "PublishDate": "1922-02-02T00:00:00",
+    "Language": "English",
+    "Publisher": "Shakespeare and Company",
+    "Quantity": 5
+  }
+]

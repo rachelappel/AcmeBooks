@@ -32,6 +32,10 @@ namespace AcmeBooksAPI.Models
 
         [MaxLength(200)] public string Publisher { get; set; }
         
+        public bool StaffPick { get; set; }
+        public int Quantity { get; set; }
+        
+        
         
     }
 }
