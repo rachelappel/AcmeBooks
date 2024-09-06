@@ -71,10 +71,11 @@ public class BookInventoryManager
         currentBooks=books;
     }
    
-    public int CountBook(Book countedBook, int Quantity)
+    public bool CountBook(Book countedBook, int Quantity)
     {
-     //   var countedBook = new Book();
         var currentBook = currentBooks.Find(b => b.ISBN == countedBook.ISBN);
+        var h1 = currentBook.GetHashCode();
+        var h2 = countedBook.GetHashCode();
         
         if (currentBook != null)
         {
@@ -84,24 +85,21 @@ public class BookInventoryManager
                 {
                     countedBook.Quantity = Quantity;
                     countedBooks.Add(countedBook);
-                    return Quantity;
+                    return true;
                 }
+                return false;
             }
             
             if (currentBook == countedBook)
             {
-                if (currentBook.Quantity == Quantity)
-                {
-                    countedBook.Quantity = Quantity;
-                    countedBooks.Add(countedBook);
-                    return Quantity;
-                }
+                countedBooks.Add(countedBook);
+                return true;
             }
             
             notFoundBooks.Add(countedBook);
-            return 0;
+            return false;
             
         }
-        return 0;
+        return false;
     }
 }
