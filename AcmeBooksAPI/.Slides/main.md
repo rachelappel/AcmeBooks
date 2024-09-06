@@ -7,9 +7,9 @@
 5. [Raw strings](raw-strings.md)  x
 6. [String interpolation](string-interpolation.md) x
 7. [Init-only setters](init-only-setters.md)
-8. [Record types](record-types.md)
+8. [Record types](record-types.md) x
 9. [Primary ctors](primary-ctor.md) 
-10. [Switch expression](switch-expression.md) locator
+10. [Switch expression](switch-expression.md) x
 11. [Pattern matching](pattern-matching.md) (match by genre)
 12. [Params collection](params-collection.md) staff picks
 13. [Partial properties](partial-properties.md) no

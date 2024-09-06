@@ -9,7 +9,7 @@
 * More flexibility
 
 ***
-[Code](../Models)
+[Code](../Services/BookInventory.cs)
 <br>
 [Main](main.md)
 ***

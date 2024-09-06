@@ -16,6 +16,7 @@ namespace AcmeBooks.Models
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Bookstore> Bookstores { get; set; }
+        
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseSqlite(@"Data Source=AcmeBooks.sqlite");
@@ -314,6 +315,20 @@ namespace AcmeBooks.Models
                     StoreType = StoreType.Warehouse
                 }
             );
+            
+            
+modelBuilder.Entity<Employee>().HasData(
+    new Employee { Id = 1, Name = "Alice Williams", Position = "Manager", HireDate = new DateTime(2020, 1, 15), Salary = 75000m },
+    new Employee { Id = 2, Name = "Robert Johnson", Position = "Sales Associate", HireDate = new DateTime(2019, 3, 22), Salary = 58000m },
+    new Employee { Id = 3, Name = "Wilma Gladstone", Position = "Developer", HireDate = new DateTime(2021, 5, 19), Salary = 92000m },
+    new Employee { Id = 4, Name = "Alice Glastonbury", Position = "Sales Associate", HireDate = new DateTime(2018, 6, 5), Salary = 67000m },
+    new Employee { Id = 5, Name = "Emily Davis", Position = "Manager", HireDate = new DateTime(2017, 7, 30), Salary = 78000m },
+    new Employee { Id = 6, Name = "Michael Brown", Position = "Sales Associate", HireDate = new DateTime(2020, 8, 15), Salary = 59000m },
+    new Employee { Id = 7, Name = "Patricia Wilson", Position = "Sales Associate", HireDate = new DateTime(2019, 9, 21), Salary = 95000m },
+    new Employee { Id = 8, Name = "Christopher Miller", Position = "Designer", HireDate = new DateTime(2016, 10, 11), Salary = 68000m },
+    new Employee { Id = 9, Name = "Laura Taylor", Position = "Sales Associate", HireDate = new DateTime(2018, 11, 23), Salary = 77000m },
+    new Employee { Id = 10, Name = "Matthew Moore", Position = "Sales Associate", HireDate = new DateTime(2022, 12, 9), Salary = 60000m }
+);
         }
     }
 }

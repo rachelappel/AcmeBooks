@@ -1,19 +1,11 @@
-﻿using AcmeBooks.Models;
-using AcmeBooksAPI.Models;
-using Microsoft.EntityFrameworkCore;
-
-namespace AcmeBooksAPI.Services
+﻿namespace AcmeBooksAPI.Services
 {
+    
+    // init only setters (editor's picks)
+    // params collection
+    // pattern matching (match by genre)
     public class StaffPick
     { 
- 
-        public string QuickPicks(string[] ISBNs)
-        {
-            // move this to the controller
-            return "";
-        }
-       
-        
         private readonly HttpClient _httpClient;
         private readonly string _staffPicksUrl;
 
@@ -42,7 +34,4 @@ namespace AcmeBooksAPI.Services
         }
     }
 
-    // init only setters (editor's picks)
-    // params collection
-    // pattern matching (match by genre)
 }
