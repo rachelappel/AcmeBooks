@@ -1,6 +1,6 @@
 ﻿namespace AcmeBooksAPI.Services
 {
-    public class BookLocator
+    public class BookLocatorService
     { 
         public string LocateBook( string authorLastName, string genre)
         {

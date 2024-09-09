@@ -1,6 +1,7 @@
 ## Refactoring is...
 
-Refactoring is improving code without changing output or behavior.
+<span style="font-size:1.5em;">improving code</span>
+without changing output or behavior.
 
 ## Why refactor?
 
@@ -8,8 +9,10 @@ Refactoring is improving code without changing output or behavior.
 
 💸 Pay down some tech debt
 
-📈 Code is made better according to your quality metrics
+📈 Improve code quality according to your metrics
 
-🪲 This all leads to fewer bugs and a better product
+👓 Improve readability/maintainability
+
+🪲 Fewer future bugs due to improved code that is easier to understand
 
 [Next](main.md)

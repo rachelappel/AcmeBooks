@@ -1,6 +1,6 @@
 ﻿namespace AcmeBooksAPI.Services
 {
-    public class Pricing
+    public class PricingService
     {
         /// <summary>
         /// Calculates the price of a given number of books based on the price per book and any applicable discounts.
@@ -10,13 +10,22 @@
         /// <returns>The calculated price after applying any discounts.</returns>
         public decimal CalculatePrice(int numberOfBooks, decimal pricePerBook)
         {
-            decimal discount = numberOfBooks switch
+            decimal discount;
+            switch (numberOfBooks)
             {
-                > 50 => 0.20M,
-                > 25 => 0.15M,
-                >= 11 => 0.10M,
-                _ => 0
-            };
+                case > 50:
+                    discount = 0.20M;
+                    break;
+                case > 25:
+                    discount = 0.15M;
+                    break;
+                case >= 11:
+                    discount = 0.10M;
+                    break;
+                default:
+                    discount = 0;
+                    break;
+            }
 
             decimal totalPrice = numberOfBooks * pricePerBook;
             decimal discountAmount = totalPrice * discount;

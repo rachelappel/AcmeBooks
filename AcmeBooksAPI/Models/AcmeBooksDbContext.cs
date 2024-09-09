@@ -16,6 +16,8 @@ namespace AcmeBooks.Models
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Bookstore> Bookstores { get; set; }
+        public DbSet<Employee>  Employees  { get; set; }
+        public DbSet<StaffPick> StaffPicks { get; set; }
         
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -241,6 +243,120 @@ namespace AcmeBooks.Models
                     Id = 20, Title = "Ulysses", ISBN = "978-0-679-72232-3", AuthorId = 5, GenreId = 10,
                     PublishDate = new DateTime(1922, 2, 2), Language = Language.English,
                     Publisher = "Shakespeare and Company", Quantity = 5
+                },
+                new Book
+                {
+                    Id = 22, Title = "Madame Bovary", ISBN = "978-0-14-044912-9", AuthorId = 8, GenreId = 5, 
+                    PublishDate = new DateTime(1857, 12, 12), Language = Language.French, 
+                    Publisher = "Michel Lévy Frères", Quantity = 10
+                },
+                new Book
+                {
+                    Id = 23, Title = "One Hundred Years of Solitude", ISBN = "978-0-06-088328-7", AuthorId = 9, GenreId = 2, 
+                    PublishDate = new DateTime(1967, 5, 30), Language = Language.Spanish, 
+                    Publisher = "Harper & Row", Quantity = 9
+                },
+                new Book
+                {
+                    Id = 24, Title = "The Brothers Karamazov", ISBN = "978-0-14-044924-2", AuthorId = 5, GenreId = 9, 
+                    PublishDate = new DateTime(1880, 1, 1), Language = Language.Russian, 
+                    Publisher = "The Russian Messenger", Quantity = 7
+                },
+                new Book
+                {
+                    Id = 25, Title = "Anna Karenina", ISBN = "978-0-14-303500-8", AuthorId = 4, GenreId = 9, 
+                    PublishDate = new DateTime(1877, 4, 1), Language = Language.Russian, 
+                    Publisher = "The Russian Messenger", Quantity = 6
+                },
+                new Book
+                {
+                    Id = 26, Title = "The Old Man and the Sea", ISBN = "978-0-684-80122-3", AuthorId = 10, GenreId = 1, 
+                    PublishDate = new DateTime(1952, 9, 1), Language = Language.English, 
+                    Publisher = "Charles Scribner's Sons", Quantity = 10
+                },
+                new Book
+                {
+                    Id = 27, Title = "The Scarlet Letter", ISBN = "978-0-14-243726-1", AuthorId = 6, GenreId = 1, 
+                    PublishDate = new DateTime(1850, 3, 16), Language = Language.English, 
+                    Publisher = "Ticknor, Reed & Fields", Quantity = 4
+                },
+                new Book
+                {
+                    Id = 28, Title = "Frankenstein", ISBN = "978-0-14-143947-1", AuthorId = 11, GenreId = 6, 
+                    PublishDate = new DateTime(1818, 1, 1), Language = Language.English, 
+                    Publisher = "Lackington, Hughes, Harding, Mavor & Jones", Quantity = 3
+                },
+                new Book
+                {
+                    Id = 29, Title = "Jane Eyre", ISBN = "978-0-14-144114-6", AuthorId = 12, GenreId = 5, 
+                    PublishDate = new DateTime(1847, 10, 16), Language = Language.English, 
+                    Publisher = "Smith, Elder & Co.", Quantity = 7
+                },
+                new Book
+                {
+                    Id = 30, Title = "The Count of Monte Cristo", ISBN = "978-0-14-044926-6", AuthorId = 13, GenreId = 10, 
+                    PublishDate = new DateTime(1844, 8, 28), Language = Language.French, 
+                    Publisher = "Penguin Books", Quantity = 6
+                },
+                new Book
+                {
+                    Id = 31, Title = "Beloved", ISBN = "978-0-452-26736-7", AuthorId = 14, GenreId = 5,
+                    PublishDate = new DateTime(1987, 9, 16), Language = Language.English,
+                    Publisher = "Alfred A. Knopf", Quantity = 8
+                },
+                new Book
+                {
+                    Id = 32, Title = "The Road", ISBN = "978-0-307-38789-9", AuthorId = 15, GenreId = 5,
+                    PublishDate = new DateTime(2006, 9, 26), Language = Language.English,
+                    Publisher = "Alfred A. Knopf", Quantity = 5
+                },
+                new Book
+                {
+                    Id = 33, Title = "In Cold Blood", ISBN = "978-0-679-74558-2", AuthorId = 16, GenreId = 4,
+                    PublishDate = new DateTime(1966, 1, 17), Language = Language.English,
+                    Publisher = "Random House", Quantity = 7
+                },
+                new Book
+                {
+                    Id = 34, Title = "Catch-22", ISBN = "978-0-684-83339-1", AuthorId = 17, GenreId = 6,
+                    PublishDate = new DateTime(1961, 11, 10), Language = Language.English,
+                    Publisher = "Simon & Schuster", Quantity = 9
+                },
+                new Book
+                {
+                    Id = 35, Title = "A Tale of Two Cities", ISBN = "978-0-486-42453-3", AuthorId = 18, GenreId = 1,
+                    PublishDate = new DateTime(1859, 4, 30), Language = Language.English,
+                    Publisher = "Chapman & Hall", Quantity = 6
+                },
+                new Book    
+                {
+                    Id = 36, Title = "Their Eyes Were Watching God", ISBN = "978-0-06-083867-6", AuthorId = 19, GenreId = 5,
+                    PublishDate = new DateTime(1937, 9, 18), Language = Language.English,
+                    Publisher = "J.B. Lippincott & Co.", Quantity = 5
+                },
+                new Book
+                {
+                    Id = 37, Title = "The Souls of Black Folk", ISBN = "978-0-14-018998-8", AuthorId = 20, GenreId = 9,
+                    PublishDate = new DateTime(1903, 4, 18), Language = Language.English,
+                    Publisher = "A.C. McClurg & Co.", Quantity = 4
+                },
+                new Book
+                {
+                    Id = 38, Title = "Go Tell It on the Mountain", ISBN = "978-0-385-33405-2", AuthorId = 21, GenreId = 5,
+                    PublishDate = new DateTime(1953, 5, 18), Language = Language.English,
+                    Publisher = "Knopf", Quantity = 7
+                },
+                new Book
+                {
+                    Id = 39, Title = "Invisible Man", ISBN = "978-0-679-60139-0", AuthorId = 22, GenreId = 5,
+                    PublishDate = new DateTime(1952, 4, 14), Language = Language.English,
+                    Publisher = "Random House", Quantity = 6
+                },
+                new Book
+                {
+                    Id = 40, Title = "The Bluest Eye", ISBN = "978-0-307-27551-6", AuthorId = 14, GenreId = 5,
+                    PublishDate = new DateTime(1970, 6, 20), Language = Language.English,
+                    Publisher = "Holt, Rinehart and Winston", Quantity = 8
                 }
             );
             
@@ -316,19 +432,23 @@ namespace AcmeBooks.Models
                 }
             );
             
-            
-modelBuilder.Entity<Employee>().HasData(
-    new Employee { Id = 1, Name = "Alice Williams", Position = "Manager", HireDate = new DateTime(2020, 1, 15), Salary = 75000m },
-    new Employee { Id = 2, Name = "Robert Johnson", Position = "Sales Associate", HireDate = new DateTime(2019, 3, 22), Salary = 58000m },
-    new Employee { Id = 3, Name = "Wilma Gladstone", Position = "Developer", HireDate = new DateTime(2021, 5, 19), Salary = 92000m },
-    new Employee { Id = 4, Name = "Alice Glastonbury", Position = "Sales Associate", HireDate = new DateTime(2018, 6, 5), Salary = 67000m },
-    new Employee { Id = 5, Name = "Emily Davis", Position = "Manager", HireDate = new DateTime(2017, 7, 30), Salary = 78000m },
-    new Employee { Id = 6, Name = "Michael Brown", Position = "Sales Associate", HireDate = new DateTime(2020, 8, 15), Salary = 59000m },
-    new Employee { Id = 7, Name = "Patricia Wilson", Position = "Sales Associate", HireDate = new DateTime(2019, 9, 21), Salary = 95000m },
-    new Employee { Id = 8, Name = "Christopher Miller", Position = "Designer", HireDate = new DateTime(2016, 10, 11), Salary = 68000m },
-    new Employee { Id = 9, Name = "Laura Taylor", Position = "Sales Associate", HireDate = new DateTime(2018, 11, 23), Salary = 77000m },
-    new Employee { Id = 10, Name = "Matthew Moore", Position = "Sales Associate", HireDate = new DateTime(2022, 12, 9), Salary = 60000m }
-);
+            modelBuilder.Entity<Employee>().HasData(
+                new Employee { Id = 1, Name = "Alice Williams", Position = "Manager", HireDate = new DateTime(2020, 1, 15), Salary = 75000m },
+                new Employee { Id = 2, Name = "Robert Johnson", Position = "Bookstore Associate", HireDate = new DateTime(2019, 3, 22), Salary = 58000m },
+                new Employee { Id = 3, Name = "Wilma Gladstone", Position = "Developer", HireDate = new DateTime(2021, 5, 19), Salary = 92000m },
+                new Employee { Id = 4, Name = "Alice Glastonbury", Position = "Bookstore Associate", HireDate = new DateTime(2018, 6, 5), Salary = 67000m },
+                new Employee { Id = 5, Name = "Emily Davis", Position = "Manager", HireDate = new DateTime(2017, 7, 30), Salary = 78000m },
+                new Employee { Id = 6, Name = "Michael Brown", Position = "Bookstore Associate", HireDate = new DateTime(2020, 8, 15), Salary = 59000m },
+                new Employee { Id = 7, Name = "Patricia Wilson", Position = "Bookstore Associate", HireDate = new DateTime(2019, 9, 21), Salary = 95000m },
+                new Employee { Id = 8, Name = "Christopher Miller", Position = "Designer", HireDate = new DateTime(2016, 10, 11), Salary = 68000m },
+                new Employee { Id = 9, Name = "Laura Taylor", Position = "Bookstore Associate", HireDate = new DateTime(2018, 11, 23), Salary = 77000m },
+                new Employee { Id = 10, Name = "Matthew Moore", Position = "Bookstore Associate", HireDate = new DateTime(2022, 12, 9), Salary = 60000m }
+            );
+
+            modelBuilder.Entity<StaffPick>()
+                .HasOne(sp => sp.Book)
+                .WithMany()
+                .HasForeignKey("BookId");
         }
     }
 }

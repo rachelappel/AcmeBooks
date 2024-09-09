@@ -12,7 +12,7 @@ public class OrderService
         {
             order.Customer =   new Customer { Id = 0, Name = "In-store Customer"}; 
         }
-        else if (customer != null)
+        else 
         {
             order.CustomerId = customer.Id;
             order.Customer = customer;
@@ -37,8 +37,7 @@ public class OrderService
         var booksList="";
         foreach (var orderItem in order.OrderItems)
         {
-            booksList +=   orderItem.BookTitle  + "\n";
-            
+            booksList += orderItem.BookTitle  + "\n";
             order.TotalAmount += (orderItem.Price * orderItem.Quantity);
         }
         
