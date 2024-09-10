@@ -1,7 +1,25 @@
+## Refactorings in this talk:
+
+## Modern C# features
+
+* [Top-level statements](top-level-statements.md) Program
+* [Global usings](global-usings.md) any file
+* [File-scoped types](file-scoped.md) schedule
+* [Nullable references](nullable.md) multi
+* [Raw strings](raw-strings.md)  orderservice
+* [String interpolation](string-interpolation.md) booklocator
+* [Switch expression](switch-expression.md) locator
+* [Pattern matching](pattern-matching.md) multi
+* [Primary constructors](primary-ctor.md) (authorhighlights)
+* [Init-only setters](init-only-setters.md) (authorhighlights (maybe staffpicks))
+* [Record types](record-types.md) bookinventory
+* [Params collection](params-collection.md) StaffPicks
+* [Pattern matching](pattern-matching.md) multi
 
 
+## Notes
 
-## nullable references
+### nullable references
 
 [OrderService.cs](../Services/OrderService.cs)
 
@@ -31,7 +49,7 @@ this shouldn't be null and can either ! suppress warning or
  }
 ```
 
-## Records
+### Records
 
 * Records add another way to define types. 
 * You use class definitions to create object-oriented hierarchies that focus on the responsibilities and behavior of objects. 
@@ -39,7 +57,7 @@ this shouldn't be null and can either ! suppress warning or
 * You create record types when you want value-based equality and comparison, don't want to copy values, and want to use reference variables. 
 * You create record struct types when you want the features of records for a type that is small enough to copy efficiently.
 
-## Pattern Matching
+### Pattern Matching
 
 BooksController line 48/50, in the null checks you can do a pattern check
 

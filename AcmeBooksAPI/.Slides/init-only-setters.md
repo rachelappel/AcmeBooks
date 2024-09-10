@@ -7,7 +7,7 @@ Ability to create objects with read-only properties that are initialized by the 
 * Improves readability and maintainability
 
 ***
-[Code](../Services/StaffPicks.cs)
+[Code](../Services/BookmarkMaker.cs)
 <br>
 [Main](main.md)
 ***
