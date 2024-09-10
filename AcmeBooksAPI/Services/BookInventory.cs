@@ -25,13 +25,13 @@ public class BookInventoryManager
             if (currentBook.ISBN == countedBook.ISBN && 
                 currentBook.Title == countedBook.Title &&
                 currentBook.PublishDate == countedBook.PublishDate) 
+            {
+                if (currentBook.Quantity == Quantity)
                 {
-                    if (currentBook.Quantity == Quantity)
-                    {
-                        return true;
-                    }
-                    return false;
+                    return true;
                 }
+                return false;
+            }
 
             // With records, you can simply compare record types like value types
             /*if (currentBook == countedBook)
