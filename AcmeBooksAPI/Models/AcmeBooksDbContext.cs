@@ -17,7 +17,7 @@ namespace AcmeBooks.Models
         public DbSet<OrderItem> OrderItems { get; set; }
         public DbSet<Bookstore> Bookstores { get; set; }
         public DbSet<Employee>  Employees  { get; set; }
-        public DbSet<StaffPick> StaffPicks { get; set; }
+
         
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -445,10 +445,6 @@ namespace AcmeBooks.Models
                 new Employee { Id = 10, Name = "Matthew Moore", Position = "Bookstore Associate", HireDate = new DateTime(2022, 12, 9), Salary = 60000m }
             );
 
-            modelBuilder.Entity<StaffPick>()
-                .HasOne(sp => sp.Book)
-                .WithMany()
-                .HasForeignKey("BookId");
         }
     }
 }
