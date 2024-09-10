@@ -8,7 +8,7 @@
         /// <param name="numberOfBooks">The number of books to calculate the price for.</param>
         /// <param name="pricePerBook">The price per book.</param>
         /// <returns>The calculated price after applying any discounts.</returns>
-        public decimal CalculatePrice(int numberOfBooks, decimal pricePerBook)
+        public decimal CalculateDiscount(int numberOfBooks, decimal pricePerBook)
         {
             decimal discount;
             switch (numberOfBooks)

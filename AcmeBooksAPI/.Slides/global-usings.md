@@ -7,9 +7,10 @@
 * `Globalusings.g.cs` | Your-global-usings.cs
 * `<ImplicitUsings>enable</ImplicitUsings>`
 
+***
 [Code](../Program.cs)
 <br>
-[Main](main.md)
+[Next](file-scoped.md) | [Main](main.md) 
 ***
 
 Resources:

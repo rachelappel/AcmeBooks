@@ -1,8 +1,8 @@
 ## String interpolation | C# 10, 11 
 
-**Implement with `$`**
+Implement with `$`
 
-* Improves readability
+* Significantly improves readability
 * Syntactic sugar
 * Fewer errors
 
@@ -11,7 +11,7 @@ Beginning with C# 10, you can use an interpolated string to initialize a constan
 ***
 [Code](../Services/BookLocator.cs)
 <br>
-[Main](main.md)
+[Next](switch-expression.md) | [Main](main.md)
 ***
 Resources:
 

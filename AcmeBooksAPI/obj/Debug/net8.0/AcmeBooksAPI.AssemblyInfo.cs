@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AcmeBooksAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+febc2f812fb00faf8e86004dcc90ece55f7e1e96")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a7e0b0820fa21e789b018a4b3202afaf436cb03")]
 [assembly: System.Reflection.AssemblyProductAttribute("AcmeBooksAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AcmeBooksAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

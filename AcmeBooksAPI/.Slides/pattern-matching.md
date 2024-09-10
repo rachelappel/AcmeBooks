@@ -15,6 +15,9 @@ Basic pattern matching with `is` expressions and type patterns in `switch` state
 ***
 [Code](../Controllers/BooksController.cs)
 <br>
-[Main](main.md)
+[Next](init-only-setters.md) | [Main](main.md)
 ***
 Resources:
+
+* [Pattern matching overview](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/pattern-matching)
+* [Pattern matching - the is and switch expressions, and operators and, or and not in patterns](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/patterns)

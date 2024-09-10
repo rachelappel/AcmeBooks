@@ -17,7 +17,7 @@
 ***
 [Code](../Services/BookInventory.cs)
 <br>
-[Main](main.md)
+[Next](nullable.md) | [Main](main.md)
 ***
 Resources:
 

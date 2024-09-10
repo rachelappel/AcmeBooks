@@ -9,10 +9,10 @@
 * Pattern matching in switches
 
 ***
-[Book Locator](../Services/BookLocator.cs)
-[Calculate Price](../Services/PricingService.cs)
+[[Code] Book Locator](../Services/BookLocator.cs) <br>
+[[Code] Calculate Price](../Services/PricingService.cs)
 <br>
-[Main](main.md)
+[Next](pattern-matching.md) | [Main](main.md)
 ***
 Resources:
 

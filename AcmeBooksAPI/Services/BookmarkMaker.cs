@@ -10,7 +10,7 @@ public class BookmarkMakerService
     public BookmarkMakerService(string author, DateTime birthday, string biography, string? famousQuote)
     {
         Author = author;
-        Birthday = birthday.ToShortDateString();
+        Birthday = birthday.ToLongDateString();
         Biography = biography;
         FamousQuote = famousQuote;
     }

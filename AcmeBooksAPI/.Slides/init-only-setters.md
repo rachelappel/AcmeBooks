@@ -9,9 +9,10 @@ Ability to create objects with read-only properties that are initialized by the 
 ***
 [Code](../Services/BookmarkMaker.cs)
 <br>
-[Main](main.md)
+[Next](primary-ctor.md) | [Main](main.md)
 ***
 Resources:
 
-[Init-only setters and indexers]([Init-only properties](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/init))
+* [Init-only setters and indexers](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/init)
+* [Use C# 9 records and init-only properties](https://blog.jetbrains.com/dotnet/2020/12/07/use-c-9-records-and-init-only-properties-in-resharper-and-rider-2020-3/)
 

@@ -26,7 +26,7 @@ namespace AcmeBooksAPI.Models
         [EmailAddress]
         [RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage = "Invalid email format.")]
         public string Email { get; set; }
-
+        
         public List<Book> Books { get; set; } = new();
     }
 }

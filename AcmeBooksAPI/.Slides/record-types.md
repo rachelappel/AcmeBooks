@@ -1,6 +1,6 @@
 ## Record types
 
-**Records are a way to make an entire object immutable as opposed to individual properties that are found in init-only properties.**
+Records are a way to make an entire object immutable as opposed to individual properties that are found in init-only properties.
 
 * Enhanced readability with nominal or positional syntax
 * Value type semantics in a reference type (e.g, comparisons)
@@ -11,6 +11,6 @@
 ***
 [Code](../Services/BookInventory.cs)
 <br>
-[Main](main.md)
+[Next](params-collection.md) | [Main](main.md)
 ***
 Resources:
