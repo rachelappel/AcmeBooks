@@ -4,14 +4,13 @@ using AcmeBooks.Models;
 
 namespace AcmeBooksAPI.Models
 {
+    // customer can be null if the sale is in the bookstore
+    // otherwise the customer is a school, uni, business, or book club
     public class Order
     {
-        // customer can be null if the sale is in the bookstore
-        // otherwise the customer is a school, uni, business, or book club
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-
         public DateTime OrderDate { get; set; }
         public Customer? Customer { get; set; }
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();

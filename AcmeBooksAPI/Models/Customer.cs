@@ -5,10 +5,6 @@ namespace AcmeBooksAPI.Models
 {
     public class Customer
     {
-        // generic customer (guest) for point of sale
-        // should map to primary ct
-        // ors, immutability
-        
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }

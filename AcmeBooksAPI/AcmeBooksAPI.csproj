@@ -26,6 +26,7 @@
       <Content Include=".Slides\00-intro.md" />
       <Content Include=".Slides\01-intro.md" />
       <Content Include=".Slides\02-intro.md" />
+      <Content Include=".Slides\end.md" />
       <Content Include=".Slides\file-scoped.md" />
       <Content Include=".Slides\main.md" />
       <Content Include=".Slides\global-usings.md" />
@@ -39,9 +40,6 @@
       <Content Include=".Slides\raw-strings.md" />
       <Content Include=".Slides\record-types.md" />
       <Content Include=".Slides\jb.png" />
-      <Content Include=".Slides\refactoring.md" />
-      <Content Include=".Slides\rider.jpg" />
-      <Content Include=".Slides\rider.png" />
       <Content Include=".Slides\string-interpolation.md" />
       <Content Include=".Slides\switch-expression.md" />
       <Content Include=".Slides\top-level-statements.md" />
