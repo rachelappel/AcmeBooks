@@ -9,9 +9,7 @@ Implement with `$`
 Beginning with C# 10, you can use an interpolated string to initialize a constant string.
 
 ***
-[Code](../Services/BookLocator.cs)
-<br>
-[Next](switch-expression.md) | [Main](main.md)
+[Code](../Services/BookLocator.cs) | [Main](main.md) | [Next](switch-expression.md)
 ***
 Resources:
 

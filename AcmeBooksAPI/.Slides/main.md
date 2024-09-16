@@ -1,7 +1,7 @@
  # Modern C# features
 
-* [Top-level statements](top-level-statements.md) 
-* [Global usings](global-usings.md) 
+* [Global usings](global-usings.md)
+* [Top-level statements](top-level-statements.md)  
 * [File-scoped types](file-scoped.md) 
 * [Nullable references](nullable.md) 
 * [Raw strings](raw-strings.md)  

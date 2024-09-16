@@ -8,9 +8,7 @@
 * `<ImplicitUsings>enable</ImplicitUsings>`
 
 ***
-[Code](../Program.cs)
-<br>
-[Next](file-scoped.md) | [Main](main.md) 
+[Code](../Program.cs) | [Main](main.md) | [Next](top-level-statements.md)  
 ***
 
 Resources:

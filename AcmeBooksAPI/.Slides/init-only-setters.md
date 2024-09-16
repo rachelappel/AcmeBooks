@@ -7,9 +7,7 @@ Ability to create objects with read-only properties that are initialized by the 
 * Improves readability and maintainability
 
 ***
-[Code](../Services/BookmarkMaker.cs)
-<br>
-[Next](primary-ctor.md) | [Main](main.md)
+[Code](../Services/BookmarkMaker.cs) | [Main](main.md) | [Next](record-types.md) 
 ***
 Resources:
 

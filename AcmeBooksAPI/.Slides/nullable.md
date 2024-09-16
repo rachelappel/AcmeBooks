@@ -11,9 +11,7 @@ NRTs are annotations to variable declarations to help direct the compiler and ru
 * Reduce boilerplate code for null checking
 
 ***
-[Code](../Services/OrderService.cs)
-
-[Next](raw-strings.md) | [Main](main.md)
+[Code](../Services/OrderService.cs) | [Main](main.md) | [Next](raw-strings.md)
 ***
 Resources:
 

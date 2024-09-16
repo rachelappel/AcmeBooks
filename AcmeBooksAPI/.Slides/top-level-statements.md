@@ -11,7 +11,7 @@
 
 ***
 
-[Code](../Program.cs) | [Next](global-usings.md) | [Main](main.md)
+[Code](../Program.cs) | [Main](main.md) | [Next](file-scoped.md) 
 ***
 
 Resources:

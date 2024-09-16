@@ -11,9 +11,7 @@ Rules:
 * The `params` parameter must be an array or one of the recognized collection types.
 
 ***
-[Code](../Services/StaffPickService.cs)
-<br>
-[Next](end.md) | [Main](main.md)
+[Code](../Services/StaffPickService.cs) | [Main](main.md) | [Next](end.md) 
 
 ***
 Resources:

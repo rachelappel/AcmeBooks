@@ -8,9 +8,7 @@ Primary constructors allow for a more concise declaration of types that are prim
 * C# 12 - Primary constructors in classes also
 
 ***
-[Code](../Services/BookmarkMaker.cs)
-<br>
-[Next](record-types.md) | [Main](main.md)
+[Code](../Services/BookmarkMaker.cs) | [Main](main.md) | [Next](init-only-setters.md)
 ***
 Resources:
 

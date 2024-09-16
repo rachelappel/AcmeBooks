@@ -7,9 +7,7 @@ Implement with triple quotes (""")
 * Fewer escape characters
 
 ***
-[Code](../Services/OrderService.cs)
-<br>
-[Next](string-interpolation.md) | [Main](main.md)
+[Code](../Services/OrderService.cs) | [Main](main.md) | [Next](string-interpolation.md)
 ***
 Resources:
 

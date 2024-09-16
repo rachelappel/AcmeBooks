@@ -15,9 +15,7 @@
 * Can reuse the same type names in other files
 
 ***
-[Code](../Services/BookInventory.cs)
-<br>
-[Next](nullable.md) | [Main](main.md)
+[Code](../Services/StaffSchedule.cs) | [Main](main.md) |[Next](nullable.md)
 ***
 Resources:
 

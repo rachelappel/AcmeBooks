@@ -9,8 +9,6 @@ Records are a way to make an entire object immutable as opposed to individual pr
 * More flexibility
 
 ***
-[Code](../Services/BookInventory.cs)
-<br>
-[Next](params-collection.md) | [Main](main.md)
+[Code](../Services/BookInventory.cs) | [Main](main.md) | [Next](params-collection.md) 
 ***
 Resources:
