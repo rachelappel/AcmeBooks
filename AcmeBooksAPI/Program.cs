@@ -4,7 +4,6 @@ using AcmeBooksAPI.Services;
 using AcmeBooksAPI.Services.BookInventoryManager;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace AcmeBooksAPI
 {
     public class Program

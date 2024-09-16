@@ -31,6 +31,7 @@
             return weeklySchedule;
         }
     }
+    // file-scoped
     internal class Employee
     {
         public int Id { get; set; }

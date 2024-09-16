@@ -9,7 +9,7 @@
         // select a random book for each of them
         // compare books to see if there are dups
         // if so note the duplicate and pick another 
-        public void WeeklyPick(int employeeId, params string[] ISBNs)
+        public void WeeklyPick(int employeeId, string[] ISBNs)
         {
             foreach (var ISBN in ISBNs)
             {
