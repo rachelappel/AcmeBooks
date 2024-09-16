@@ -1,4 +1,4 @@
-## Primary constructors
+# Primary constructors
 
 Primary constructors allow for a more concise declaration of types that are primarily data holders.
 

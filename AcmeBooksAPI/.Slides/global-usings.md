@@ -1,4 +1,4 @@
-## Global usings | C# 10
+# Global usings | C# 10
 
 **Organize common usings in one file** 
 

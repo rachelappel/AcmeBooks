@@ -1,11 +1,12 @@
-## What is modern code?
+# What is modern code?
 
-2019: C# 8.0 is the first major C# release that specifically targets .NET Core.
+<span style="font-size:1.25em;">2019: C# 8.0 is the first major C# release that _specifically targets .NET Core_</span>
 
 ## Legacy code
 
-  * .NET Framework before C# 8.0
-  * Early .NET Core
-  * Anything that you've deployed
+📅 .NET Framework before C# 8.0  
+📅  Early .NET Core  
+⬆️ Anything that you've deployed  
 
+---
 [Next](02-intro.md)

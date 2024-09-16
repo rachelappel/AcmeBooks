@@ -1,4 +1,4 @@
-## Nullable reference types | C# 8
+# Nullable reference types | C# 8
 
 NRTs are annotations to variable declarations to help direct the compiler and runtime.
 

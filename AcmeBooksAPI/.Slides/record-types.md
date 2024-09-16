@@ -1,4 +1,4 @@
-## Record types
+# Record types
 
 Records are a way to make an entire object immutable as opposed to individual properties that are found in init-only properties.
 

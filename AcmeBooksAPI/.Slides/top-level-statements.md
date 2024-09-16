@@ -1,4 +1,4 @@
-## Top-level statements
+# Top-level statements
 
 **Enables programs without `Main` functions.**
 
@@ -11,8 +11,7 @@
 
 ***
 
-[Code](../Program.cs)<br>
-[Next](global-usings.md) | [Main](main.md)
+[Code](../Program.cs) | [Next](global-usings.md) | [Main](main.md)
 ***
 
 Resources:

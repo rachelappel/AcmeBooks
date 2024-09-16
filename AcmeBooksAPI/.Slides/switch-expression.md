@@ -1,4 +1,4 @@
-## Switch Expression
+# Switch Expression
 
 **Use the switch expression to evaluate an expression from a list of candidate expressions based on a pattern match with an input expression.**
 

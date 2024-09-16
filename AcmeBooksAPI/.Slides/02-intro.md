@@ -1,9 +1,8 @@
-## Refactoring is...
+# Refactoring is...
 
-<span style="font-size:1.5em;">improving code</span>
-without changing output or behavior.
-
-📝 Refactoring is not rewriting or bug fixing
+<span style="font-size:1.5em;">📝 improving code</span>
+without changing output or behavior.  
+🐞 Refactoring is not rewriting or bug fixing
 
 ## Why refactor?
 
@@ -15,6 +14,8 @@ without changing output or behavior.
 
 🧘 More flexible code
 
-🪲 Fewer future bugs due to improved code that is easier to understand
+🪲 Fewer bugs in the future due to improved code
+
+---
 
 [Next](top-level-statements.md)

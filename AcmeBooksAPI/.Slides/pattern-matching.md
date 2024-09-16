@@ -1,4 +1,4 @@
-## Pattern matching | Multiple versions
+# Pattern matching | Multiple versions
 
 * More readable and maintainable
 * More flexibility

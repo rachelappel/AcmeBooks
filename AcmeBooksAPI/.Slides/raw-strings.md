@@ -1,4 +1,4 @@
-## Raw strings | C# 11
+# Raw strings | C# 11
 
 Implement with triple quotes (""")
 

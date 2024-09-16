@@ -1,4 +1,4 @@
-﻿## Partial properties 
+﻿# Partial properties 
 
 
 

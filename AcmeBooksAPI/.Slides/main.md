@@ -1,4 +1,4 @@
- ## Modern C# features
+ # Modern C# features
 
 * [Top-level statements](top-level-statements.md) 
 * [Global usings](global-usings.md) 

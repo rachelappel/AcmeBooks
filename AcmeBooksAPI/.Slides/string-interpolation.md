@@ -1,4 +1,4 @@
-## String interpolation | C# 10, 11 
+# String interpolation | C# 10, 11 
 
 Implement with `$`
 

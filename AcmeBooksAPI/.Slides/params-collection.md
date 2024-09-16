@@ -1,4 +1,4 @@
-## Params collection | C# 13
+# Params collection | C# 13
 
 The `params` keyword is a convenient way to allow methods to receive a varying amount of arguments.
 
@@ -13,7 +13,8 @@ Rules:
 ***
 [Code](../Services/StaffPickService.cs)
 <br>
-[End](00-intro.md)
+[Next](end.md) | [Main](main.md)
+
 ***
 Resources:
 

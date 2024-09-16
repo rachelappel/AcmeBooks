@@ -26,6 +26,7 @@
       <Content Include=".Slides\00-intro.md" />
       <Content Include=".Slides\01-intro.md" />
       <Content Include=".Slides\02-intro.md" />
+      <Content Include=".Slides\download.png" />
       <Content Include=".Slides\end.md" />
       <Content Include=".Slides\file-scoped.md" />
       <Content Include=".Slides\main.md" />
