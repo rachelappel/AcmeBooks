@@ -1,10 +1,10 @@
 # Global usings | C# 10
 
-**Organize common usings in one file** 
+<span style="font-size:1.2em;">Organize and abstract away common `usings` in a project into one file.</style>
 
-* Removing unnecessary code 
+* Remove unnecessary code 
 * Improve readability
-* `Globalusings.g.cs` | Your-global-usings.cs
+* `Globalusings.g.cs` || Your-global-usings.g.cs
 * `<ImplicitUsings>enable</ImplicitUsings>`
 
 ***

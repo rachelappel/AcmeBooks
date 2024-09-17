@@ -1,5 +1,7 @@
 # File-scoped types
 
+<span style="font-size:1.2em;">Hide and organize types</style>
+
 ## File-scoped namespaces | C# 10
 
 * Remove unnecessary code

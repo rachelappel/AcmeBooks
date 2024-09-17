@@ -1,6 +1,6 @@
 # Nullable reference types | C# 8
 
-NRTs are annotations to variable declarations to help direct the compiler and runtime.
+<span style="font-size:1.2em;">NRTs are annotations to variable declarations to help direct the compiler and runtime.</style>
 
 `?` to mark it as nullable
 `!` to suppress nulls

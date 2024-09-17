@@ -1,12 +1,13 @@
 # Switch Expression
 
-**Use the switch expression to evaluate an expression from a list of candidate expressions based on a pattern match with an input expression.**
+<span style="font-size:1.2em;">Use the switch expression to evaluate an expression from a list of candidate expressions based on a pattern match with an input expression.</style>
 
-* More compact lambda-style syntax
-* Removes break statements
-* More flexible
+* This one isn't always about readability
 * More powerful matching
-* Pattern matching in switches
+* More flexible than traditional switch
+* Compact Lambda-style syntax
+* Removes break statements
+* Can use pattern matching
 
 ***
 [[Code] Book Locator](../Services/BookLocator.cs) | [[Code] Calculate Price](../Services/PricingService.cs) | [Main](main.md) | [Next](pattern-matching.md) 

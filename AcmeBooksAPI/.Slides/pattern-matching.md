@@ -13,7 +13,7 @@ Basic pattern matching with `is` expressions and type patterns in `switch` state
 * **C# 10.0**: Enhanced pattern matching with `constant` patterns and improvements in pattern matching in lambda expressions.
 
 ***
-[Code](../Controllers/BooksController.cs) | [Main](main.md) | [Next](init-only-setters.md) 
+[Code](../Services/PricingService.cs) | [Main](main.md) | [Next](init-only-setters.md) 
 
 ***
 Resources:

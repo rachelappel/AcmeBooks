@@ -1,6 +1,6 @@
 # Top-level statements
 
-**Enables programs without `Main` functions.**
+<span style="font-size:1.2em;">Enables programs without `Main` functions.</style>
 
 * Remove unnecessary code
 * Improve readability

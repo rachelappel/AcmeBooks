@@ -1,5 +1,7 @@
 # Raw strings | C# 11
 
+<span style="font-size:1.2em;">Escape having to escape characters</style>
+
 Implement with triple quotes (""")
 
 * More manageable and readable strings

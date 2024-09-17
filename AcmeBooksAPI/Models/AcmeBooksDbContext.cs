@@ -35,7 +35,8 @@ namespace AcmeBooks.Models
                 new Genre { Id = 7, Title = "Non-Fiction", Description = "Non-fiction literature" },
                 new Genre { Id = 8, Title = "Biography", Description = "Biographies" },
                 new Genre { Id = 9, Title = "Historical", Description = "Historical works" },
-                new Genre { Id = 10, Title = "Adventure", Description = "Adventure literature" }
+                new Genre { Id = 10, Title = "Adventure", Description = "Adventure literature" },
+                new Genre { Id = 11, Title = "Educational", Description = "Adventure literature" }
             );
 
             modelBuilder.Entity<Author>().HasData(
