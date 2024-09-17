@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Include=".Slides\00-intro.md" />
+      <Content Include=".Slides\00-start.md" />
       <Content Include=".Slides\modern-code.md" />
       <Content Include=".Slides\refactoring.md" />
       <Content Include=".Slides\download.png" />
