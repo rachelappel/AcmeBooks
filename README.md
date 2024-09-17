@@ -4,6 +4,6 @@ AcmeBooksAPI is a sample to demonstrate some C# features added in modern C# vers
 
 ### Start 
 
-<a href="/.Slides/00-start.md">Starting slide</a>
+<a href="/AcmeBooksAPI/.Slides/00-start.md">Starting slide</a>
 
 Each slide links to a file in which you can try refactoring the language feature in Rider. 
