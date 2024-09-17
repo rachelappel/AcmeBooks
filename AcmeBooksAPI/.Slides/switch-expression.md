@@ -10,7 +10,8 @@
 * Can use pattern matching
 
 ***
-[[Code] Book Locator](../Services/BookLocator.cs) | [[Code] Calculate Price](../Services/PricingService.cs) | [Main](main.md) | [Next](pattern-matching.md) 
+[[Code] Book Locator](../Services/BookLocator.cs) | [[Code] Calculate Price](../Services/PricingService.cs)   
+[Main](main.md) | [Next](pattern-matching.md) 
 ***
 Resources:
 
